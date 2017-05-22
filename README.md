@@ -376,7 +376,7 @@ Checks if email is valid.
 Example usage:
 
 ```js
-var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
+var mailgun = require('mailgun-js')({ publicApiKey: publicApiKey, domain: domain});
 
 mailgun.validate('test@mail.com', function (err, body) {
   if(body && body.is_valid){
